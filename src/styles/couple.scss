@@ -1,0 +1,69 @@
+@use './_variables' as v;
+
+.couple {
+  padding: 4rem 1rem;
+  text-align: center;
+  color: v.$primary;
+
+  font-family: 'Asylym';
+
+  &__title{
+    margin: 0;
+    font-size: 5rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+  }
+  &__invite_text{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-size: 1.4rem;
+
+    p{
+      margin: 0;
+      padding: 0;
+    }
+    .song{
+      font-family: 'NewVeljovic';
+    }
+    .people{
+      font-size: 2rem;
+    }
+    .invitation{
+      font-family: 'NewVeljovic';
+      span{
+        display: block;
+        font-family: 'Asylym';
+        font-size: 2.5rem;
+        margin: .5rem 0;
+      }
+    }
+    .ornament{
+      margin: auto;
+      // width: 60%;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 4rem;
+      &.rotate{
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__photos {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  &__photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

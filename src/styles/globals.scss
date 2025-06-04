@@ -1,0 +1,63 @@
+$primary: #b5aa93;
+$font-stack: 'Helvetica Neue', sans-serif;
+
+@font-face {
+  font-family: 'KZCeremoniousOne';
+    font-weight: normal;
+  src: url('/fonts/KZ_ceremonious-one.ttf');
+}
+
+@font-face {
+  font-family: 'NewVeljovic';
+  src: url('/fonts/New-Veljovic.ttf');
+}
+@font-face {
+  font-family: 'Asylym';
+  src: url('/fonts/Asylym.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  background-color: #fff;
+  color: #333;
+  *{
+    box-sizing: border-box;
+  }
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: $primary;
+}
+
+.section-description {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  // @media (max-width: 768px) {
+  //   padding-inline: 2rem;
+  // }
+
+  // @media (max-width: 480px) {
+  //   padding-inline: 2rem;
+  // }
+}
+
+
+
+

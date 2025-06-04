@@ -1,0 +1,92 @@
+@use './_variables' as v;
+.rsvp {
+  background-color: v.$white;
+  padding: 4rem 1rem;
+  text-align: center;
+  
+  font-family: 'NewVeljovic';
+  color: v.$primary;
+
+  &__title{
+    font-family: 'KZCeremoniousOne', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
+
+
+  &__subtitle{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  &__text{
+    margin: 0;
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;    
+  }
+
+  form {
+    color: v.$secondary;
+    margin-top: 1.5rem;
+    max-width: 400px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .form-group{
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      .label{
+        margin: 0;
+        display: block;
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+      .text-input{
+        padding: 0.75rem;
+        border: none;
+        outline:none;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+      font-size: 1.2rem;
+        font-family: 'NewVeljovic';
+      }
+      .radio-input{
+        font-family: 'NewVeljovic';
+        cursor: pointer;
+        align-items: center;
+        text-align: left;
+        display: flex;
+        input{
+          margin-right: 10px; 
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+
+  &__button {
+    font-family: 'NewVeljovic';
+    font-size: 1.4rem;
+    padding: 0.75rem;
+    background-color: v.$primary;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    // &:hover {
+    //   background-color: darken(v.$primary, 10%);
+      
+    // }
+  }
+
+  &__thankyou {
+    color: green;
+    font-size: 1.1rem;
+  }
+}

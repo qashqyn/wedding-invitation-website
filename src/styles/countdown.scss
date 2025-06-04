@@ -1,0 +1,40 @@
+@use './_variables' as v;
+.countdown {
+  text-align: center;
+  padding: 5rem 0;
+  color: v.$white;
+  background: v.$primary;
+
+  &__title {
+    font-family: 'NewVeljovic';
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  &__expired {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__number {
+    display: block;
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+}

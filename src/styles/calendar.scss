@@ -1,0 +1,65 @@
+@use './_variables' as v;
+.calendar {
+  text-align: center;
+  color: v.$primary;
+  padding: 2rem;
+  font-family: 'NewVeljovic';
+
+  &__title {
+    font-family: 'KZCeremoniousOne', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__meta {
+    // font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+
+    span {
+      display: block;
+    }
+
+    div {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  }
+
+  &__weekdays,
+  &__week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+  }
+
+  &__weekdays span {
+    font-weight: bold;
+  }
+
+  &__day {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    font-size: 1rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__time{
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .selected {
+    background-image: url('/images/heart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #a88a5b;
+    font-weight: bold;
+  }
+  
+}
+

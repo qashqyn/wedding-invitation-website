@@ -1,0 +1,39 @@
+@use './_variables' as v;
+
+.hero {
+  height: 100vh;
+  background: url('/images/hero.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: v.$primary;
+
+
+  &__overlay {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9), rgba(255,255,255,0.2));
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: 'KZCeremoniousOne', sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    span{
+      margin: -2.5rem 0;
+      font-size: 7rem;
+    }
+  }
+
+  &__subtitle,
+  &__date {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    font-family: 'NewVeljovic';
+  }
+}
